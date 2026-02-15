@@ -119,3 +119,65 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 10000); // Switch every 10 seconds
     }
 });
+
+/* =========================================
+   MOBILE HERO AUTO-ROTATION
+   ========================================= */
+document.addEventListener('DOMContentLoaded', () => {
+    const navItems = document.querySelectorAll('.hero-nav-item');
+    let currentHeroIndex = 0;
+    let heroInterval;
+
+    function startHeroRotation() {
+        // specific check for mobile devices
+        if (window.innerWidth <= 768) {
+            heroInterval = setInterval(() => {
+                // Calculate next index
+                currentHeroIndex = (currentHeroIndex + 1) % navItems.length;
+
+                // Trigger click on the next item to use existing transition logic
+                if (navItems[currentHeroIndex]) {
+                    navItems[currentHeroIndex].click();
+                }
+            }, 5000); // 5 seconds
+        }
+    }
+
+    function stopHeroRotation() {
+        if (heroInterval) {
+            clearInterval(heroInterval);
+            heroInterval = null;
+        }
+    }
+
+    // Start on load if mobile
+    if (window.innerWidth <= 768) {
+        startHeroRotation();
+    }
+
+    // Handle resize events to start/stop rotation
+    window.addEventListener('resize', () => {
+        stopHeroRotation();
+        if (window.innerWidth <= 768) {
+            startHeroRotation();
+        }
+    });
+
+    // Optional: Stop rotation if user manually interacts (clicks)
+    navItems.forEach((item, index) => {
+        item.addEventListener('click', (e) => {
+            // If the click was triggered by script (e.isTrusted is false), don't stop
+            // But item.click() events are not trusted, so we need a way to distinguish
+            // Actually, for simplicity, we might just let it run or reset interval.
+            // Let's reset the interval on manual interaction to avoid immediate jump
+            if (e.isTrusted) {
+                stopHeroRotation();
+                currentHeroIndex = index; // Update index to clicked item
+                // Restart only if still mobile
+                if (window.innerWidth <= 768) {
+                    startHeroRotation();
+                }
+            }
+        });
+    });
+});
