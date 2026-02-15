@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap CSS (Grid Only) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a href="#home" class="navbar-brand">Sudhanshu Kumar</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <!-- Home Section (Cinematic Redesign) -->
+    <section id="home" class="hero-section cinematic-hero">
+        <div class="hero-bg-layer">
+            <!-- Single Creative Background -->
+            <div class="hero-bg-single"
+                style="background-image: url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop');">
+            </div>
+            <div class="bg-pattern"
+                style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+            <div class="bg-overlay"></div> <!-- Red/Green tint -->
+            <div class="bg-particles"></div> <!-- Optional for future particle effects -->
+        </div>
+
+        <div class="cinematic-container">
+            <!-- Left Sidebar / Navigation (Thumbnail List) -->
+            <div class="hero-sidebar">
+                <div class="sidebar-header">
+                    <span class="brand-logo">PORTFOLIO</span>
+                </div>
+                <ul class="hero-nav">
+                    <li class="hero-nav-item active" data-target="developer">
+                        <div class="nav-thumb">
+                            <img src="WhatsApp Image 2025-10-08 at 12.29.20_d434e5b8-Photoroom (1).png" alt="Developer">
+                        </div>
+                        <span class="nav-label">DEVELOPER</span>
+                    </li>
+                    <li class="hero-nav-item" data-target="designer">
+                        <div class="nav-thumb">
+                            <img src="IMG_1492-removebg-preview.png" alt="Designer">
+                        </div>
+                        <span class="nav-label">DESIGNER</span>
+                    </li>
+                    <li class="hero-nav-item" data-target="creator">
+                        <div class="nav-thumb">
+                            <img src="1000157646.jpg-removebg-preview.png" alt="Creator">
+                        </div>
+                        <span class="nav-label">CREATOR</span>
+                    </li>
+                </ul>
+                <!-- Time Display Removed -->
+            </div>
+
+            <!-- Main Stage -->
+            <div class="hero-stage">
+                <!-- Dynamic Content Background Text -->
+                <div class="bg-text-layer">
+                    <h1 id="hero-bg-text">WEB DEV</h1>
+                </div>
+
+                <!-- Central Character/Image -->
+                <!-- Central Character/Image -->
+                <div class="hero-visual">
+                    <div class="hero-track">
+                        <!-- 1. Developer -->
+                        <div class="hero-slide">
+                            <img src="WhatsApp Image 2025-10-08 at 12.29.20_d434e5b8-Photoroom (1).png" alt="Developer"
+                                class="hero-img">
+                        </div>
+                        <!-- 2. Designer -->
+                        <div class="hero-slide">
+                            <img src="IMG_1492-removebg-preview.png" alt="Designer" class="hero-img">
+                        </div>
+                        <!-- 3. Creator -->
+                        <div class="hero-slide">
+                            <img src="1000157646.jpg-removebg-preview.png" alt="Creator" class="hero-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content Panel -->
+                <div class="hero-info">
+                    <!-- 1. Developer -->
+                    <div class="info-content active" id="content-developer">
+                        <h4 class="hero-subtitle">THE ARCHITECT</h4>
+                        <h2 class="hero-title">SUDHANSHU KUMAR</h2>
+                        <h3 class="hero-quote">"BUILDING DIGITAL EXPERIENCES WITH <span>PASSION AND PRECISION</span>"
+                        </h3>
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn primary-btn cinematic-btn">VIEW PROJECTS</a>
+                        </div>
+                    </div>
+
+                    <!-- 2. Designer -->
+                    <div class="info-content" id="content-designer">
+                        <h4 class="hero-subtitle">THE VISIONARY</h4>
+                        <h2 class="hero-title">SUDHANSHU KUMAR</h2>
+                        <h3 class="hero-quote">"CRAFTING AESTHETICS THAT <span>BREATHE LIFE</span> INTO CODE"
+                        </h3>
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn primary-btn cinematic-btn">VIEW DESIGNS</a>
+                        </div>
+                    </div>
+
+                    <!-- 3. Creator -->
+                    <div class="info-content" id="content-creator">
+                        <h4 class="hero-subtitle">THE STORYTELLER</h4>
+                        <h2 class="hero-title">SUDHANSHU KUMAR</h2>
+                        <h3 class="hero-quote">"CAPTURING MOMENTS, SHARING <span>PERSPECTIVES</span>"
+                        </h3>
+                        <div class="hero-actions">
+                            <a href="https://www.instagram.com/sudhanshukumar_0624/" target="_blank"
+                                class="btn primary-btn cinematic-btn">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Progress Bar Removed -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center">
+                    <div class="about-slideshow">
+                        <img src="WhatsApp Image 2025-10-08 at 12.29.20_d434e5b8-Photoroom (1).png"
+                            alt="Sudhanshu Developer" class="about-img active">
+                        <img src="IMG_1492-removebg-preview.png" alt="Sudhanshu Designer" class="about-img">
+                        <img src="1000157646.jpg-removebg-preview.png" alt="Sudhanshu Creator" class="about-img">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="about-text-track">
+                        <!-- Slide 1: Developer (Logic/Tech) -->
+                        <div class="about-text-slide active">
+                            <h3 class="about-subtitle">Developer</h3>
+                            <p class="about-text">
+                                I am passionate about problem-solving and logical thinking. I enjoy learning new
+                                concepts, especially those related to technology, coding, system architecture, and
+                                <strong>Mobile App Development</strong>.
+                            </p>
+                        </div>
+
+                        <!-- Slide 2: Designer (Growth/Skills) -->
+                        <div class="about-text-slide">
+                            <h3 class="about-subtitle">Designer</h3>
+                            <p class="about-text">
+                                I am a sincere and goal-oriented individual who believes in continuous learning. I have
+                                a keen interest in developing practical design skills that fuse aesthetics with
+                                functionality.
+                            </p>
+                        </div>
+
+                        <!-- Slide 3: Creator (Values) -->
+                        <div class="about-text-slide">
+                            <h3 class="about-subtitle">Creator</h3>
+                            <p class="about-text">
+                                I believe discipline, consistency, and dedication are the keys to success. I always try
+                                to apply these values in my daily life to bring new ideas to reality.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn secondary-btn mt-3">Download CV <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            <!-- Social Links Bottom Corner -->
+            <div class="about-socials">
+                <a href="https://github.com/sudhanshukumar-0624" target="_blank" class="social-btn"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sudhanshu-kumar-1ab218333/" target="_blank" class="social-btn"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-briefcase"></i> Work Experience</h2>
+            <div class="row justify-content-center">
+                <!-- Experience Item Placeholder -->
+                <div class="col-md-8">
+                    <div class="card experience-card text-center"
+                        style="display: flex; justify-content: center; align-items: center; min-height: 150px;">
+                        <div class="card-body">
+                            <h3 style="margin: 0; padding: 0; color: var(--text-muted);">NULL</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-code"></i> Projects</h2>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400" alt="Project 1">
+                            <div class="overlay">
+                                <a href="https://github.com/sudhanshukumar-0624/addiction-films"
+                                    class="btn primary-btn btn-sm">View Code</a>
+                                <a href="#" class="btn secondary-btn btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Addiction Films</h3>
+                            <p>A photography business portfolio website.</p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400" alt="Project 2">
+                            <div class="overlay">
+                                <a href="#" class="btn primary-btn btn-sm">View Code</a>
+                                <a href="#" class="btn secondary-btn btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Website</h3>
+                            <p>A responsive portfolio website with modern animations.</p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400" alt="Project 3">
+                            <div class="overlay">
+                                <a href="#" class="btn primary-btn btn-sm">View Code</a>
+                                <a href="#" class="btn secondary-btn btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Task Manager</h3>
+                            <p>Productivity tool for managing daily tasks and schedules.</p>
+                            <div class="tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-tools"></i> Skills</h2>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
+                        <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+                        <div class="skill-item"><i class="fab fa-js"></i> JavaScript (Basic)</div>
+                    </div>
+                </div>
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                        <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+                        <div class="skill-item"><i class="fas fa-code"></i> C Programming</div>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fas fa-code"></i> VS Code</div>
+                        <div class="skill-item"><i class="fab fa-github"></i> GitHub</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="row justify-content-center">
+                <!-- Education Item 1 -->
+                <div class="col-md-8">
+                    <div class="card education-card">
+                        <div class="card-body">
+                            <h3>B.Tech <span>@ O.P. Jindal University, Raigarh</span></h3>
+                            <span class="duration">2024 - Present</span>
+                            <p>Pursuing Bachelor of Technology in Computer Science & Engineering.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Item 2 -->
+                <div class="col-md-8">
+                    <div class="card education-card">
+                        <div class="card-body">
+                            <h3>Schooling <span>@ S.D.S.M School for Excellence</span></h3>
+                            <span class="duration">Completed 2024</span>
+                            <p>Completed schooling with a focus on Science and Mathematics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-address-card"></i> Contact Me</h2>
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Address</h4>
+                        <p>House No-125, Shakuntala Niwas, Link, Road No. 5, near Subodh Poultry Farm, Bagunhatu,
+                            Baridih, Jamshedpur, Jharkhand 831017</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4>Phone</h4>
+                        <p>+91 98358 89490</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>sudhanshusdsm@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Sudhanshu Kumar. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="https://github.com/sudhanshukumar-0624" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:sudhanshusdsm@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/sudhanshu-kumar-1ab218333/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
