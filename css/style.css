@@ -132,7 +132,7 @@ ul {
     padding: 15px 0;
     z-index: 1000;
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
 }
 
 .navbar .container-fluid {
@@ -173,7 +173,7 @@ ul {
 .bar {
     display: block;
     width: 25px;
-    height: 3px;
+    height: 4px;
     margin: 5px auto;
     background-color: var(--text-color);
     transition: all 0.3s ease;
