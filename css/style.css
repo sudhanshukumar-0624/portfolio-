@@ -43,7 +43,7 @@ h6 {
     font-family: var(--font-primary);
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: var(--text-color);
 }
 
@@ -73,13 +73,13 @@ ul {
 
 .btn {
     display: inline-block;
-    padding: 13px 30px;
+    padding: 14px 30px;
     border-radius: 0;
     /* Sharp corners */
     font-family: var(--font-primary);
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-right: 15px;
