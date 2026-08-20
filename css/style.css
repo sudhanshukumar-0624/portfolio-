@@ -173,8 +173,8 @@ ul {
 .bar {
     display: block;
     width: 25px;
-    height: 4px;
-    margin: 5px auto;
+    height: 5px;
+    margin: 4px auto;
     background-color: var(--text-color);
     transition: all 0.3s ease;
 }
@@ -200,7 +200,7 @@ ul {
 }
 
 .hero-content h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 20px;
     color: var(--primary-color);
 }
